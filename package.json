@@ -3,6 +3,7 @@
   "description": "TODO",
   "version": "0.0.1",
   "scripts": {
+    "postinstall": "npm run build:tailwind",
     "dev": "sapper dev",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",

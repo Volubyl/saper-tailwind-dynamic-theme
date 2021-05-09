@@ -1,13 +1,13 @@
 <script>
   import successkid from 'images/successkid.jpg'
+  import { themeStore } from '../modules/configure-theme'
 </script>
 
 <svelte:head>
   <title>Sapper project template</title>
 </svelte:head>
 
-<h1>Great success!</h1>
-
+<h1 class="text-community-primary">Great success!</h1>
 <figure>
   <img alt="Success Kid" src={successkid} />
   <figcaption>Have fun with Sapper!</figcaption>

@@ -1,14 +1,18 @@
 <script lang="ts">
   import Nav from '../components/Nav.svelte'
+  import { themeStore } from '../modules/configure-theme'
 
   export let segment: string
 </script>
 
-<Nav {segment} />
-
-<main>
-  <slot />
-</main>
+{#if !$themeStore.isLoaded}
+  <p>Loading</p>
+{:else}
+  <Nav {segment} />
+  <main>
+    <slot />
+  </main>
+{/if}
 
 <style>
   main {

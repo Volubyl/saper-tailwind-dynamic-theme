@@ -1,7 +1,7 @@
 declare global {
-    module 'polka' {
-        interface Request {
-            foo: string;
-        }
+  module 'polka' {
+    interface Request {
+      foo: string
     }
+  }
 }
